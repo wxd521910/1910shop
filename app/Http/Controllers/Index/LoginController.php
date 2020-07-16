@@ -8,7 +8,7 @@ use App\Model\Login;   //登陆
 use Illuminate\Support\Facades\Validator; //验证器
 class LoginController extends Controller{
 
-    //登陆页面
+    //登陆页面111
     public function login(){
         return view('index.login');
     }
