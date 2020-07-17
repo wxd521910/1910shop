@@ -7,12 +7,12 @@ use Illuminate\Http\Request;
 use App\Model\Login;   //登陆
 use Illuminate\Support\Facades\Validator; //验证器
 class LoginController extends Controller{
-
+    
     //登陆页面
     public function login(){
         return view('index.login');
     }
-
+    
     // 执行登陆
     public function add(){
         $_token = request()->except('_token');
@@ -40,7 +40,7 @@ class LoginController extends Controller{
         }
     }
 
-    // 注册页面
+    // 注册页面 
     public function sign(){
         return view('index.sign');
     }
@@ -92,4 +92,5 @@ class LoginController extends Controller{
         echo "<script>alert('退出成功');location.href='/'</script>";
         // return view('admin/login/login');
     }
+
 }
